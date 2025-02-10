@@ -12,3 +12,12 @@
         @content;
     }
 }
+
+@mixin flex-style($align, $justify, $text, $wrap, $direction) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    text-align: $text;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+}
