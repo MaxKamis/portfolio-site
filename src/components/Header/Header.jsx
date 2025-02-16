@@ -7,7 +7,7 @@ function Header() {
 
         <header className="header">
             <div className="header__logo-container">
-                <h1 className="header__logo">Max Kamis</h1>
+                <h2 className="header__logo">Max Kamis</h2>
             </div>
             <nav className="header__nav">
                 <ul className="header__list">
