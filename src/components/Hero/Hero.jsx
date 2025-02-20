@@ -2,7 +2,7 @@ import "./Hero.scss";
 import Resume from "../../assets/Max-Kamis-Dev-Resume.pdf";
 import gitHubIcon from "../../assets/github-light.svg";
 import linkedInIcon from "../../assets/linkedin-light.svg";
-import heroImage from "../../assets/maxPhoto.png";
+import heroImage from "../../assets/heroImage.jpg";
 
 function Hero() {
     return (

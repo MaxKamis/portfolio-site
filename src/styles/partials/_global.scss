@@ -10,10 +10,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    border:none;
+    outline: none;
+    scroll-behavior: smooth;
 }
 
-html, body {
-    height: 100%;
-    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-  }
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+};
+
+body {
+    background: $background-color;
+    color: $primary-text-color;
+}
+
+
+
   

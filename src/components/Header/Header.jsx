@@ -1,34 +1,35 @@
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
+import { IoMenuSharp } from "react-icons/io5";
+
 
 
 function Header() {
     return (
 
         <header className="header">
-            <div className="header__logo-container">
-                <h2 className="header__logo">Max Kamis</h2>
-            </div>
+            
+            <a href="/" className="header__logo">Max Kamis</a>
+            
             <nav className="header__nav">
-                <ul className="header__list">
-                    <li className="header__item">
-                        <NavLink
-                            to="/"
-                            className={({ isActive }) => `header__link ${isActive ? 'header__link--active' : ''}`}
-                            end={false}
-                            >
-                                Projects
-                        </NavLink>
-                    </li>
-                    <li className="header__item">
-                        <NavLink to="/"
-                        className={({ isActive }) => `header__link ${isActive ? 'header__link--active' : ''}`}
-                        end={false}
-                        >
-                            Hire
-                        </NavLink>
-                    </li>
-                </ul>
+
+                <IoMenuSharp className="header__icon" />
+                
+                <NavLink
+                    to="/"
+                    className={({ isActive }) => `header__link ${isActive ? 'header__link--active' : ''}`}
+                    end={false}
+                    >Projects
+                </NavLink>
+                    
+                   
+                <NavLink 
+                    to="/"
+                    className={({ isActive }) => `header__link ${isActive ? 'header__link--active' : ''}`}
+                    end={false}
+                    >Hire
+                </NavLink>
+                  
             </nav>
         </header>
 
