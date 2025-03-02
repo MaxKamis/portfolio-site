@@ -1,3 +1,22 @@
 @use "./styles/partials/global" as *;
 
-@forward "styles/partials/global";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background: $background-color;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  transition: 0.2s ease-in;
+} 

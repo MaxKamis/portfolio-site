@@ -1,10 +1,11 @@
-import "./HomePage.scss";
-import Hero from "../components/Hero/Hero";
+import Hero from "../components/Hero/Hero.jsx";
+import Projects from "../components/ProjectsComp/Projects.jsx";
 
 function HomePage() {
   return (
     <>
       <Hero />
+      <Projects />
     </>
   );
 }

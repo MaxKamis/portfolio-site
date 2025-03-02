@@ -1,38 +1,37 @@
 import "./Header.scss";
+import Resume from "../../assets/Max-Kamis-Dev-Resume.pdf";
 import { NavLink } from "react-router-dom";
-import { IoMenuSharp } from "react-icons/io5";
+import { TiThMenuOutline } from "react-icons/ti";
 
 
 
 function Header() {
     return (
+        <header className="headerWrapper">
+            <nav className="navbar">
 
-        <header className="header">
-            
-            <a href="/" className="header__logo">Max Kamis</a>
-            
-            <nav className="header__nav">
+                <NavLink to="/" className="navbar__logo">Max Kamis</NavLink>
 
-                <IoMenuSharp className="header__icon" />
-                
-                <NavLink
-                    to="/"
-                    className={({ isActive }) => `header__link ${isActive ? 'header__link--active' : ''}`}
-                    end={false}
-                    >Projects
-                </NavLink>
-                    
-                   
-                <NavLink 
-                    to="/"
-                    className={({ isActive }) => `header__link ${isActive ? 'header__link--active' : ''}`}
-                    end={false}
-                    >Hire
-                </NavLink>
-                  
+                <div className="navbar__links">
+                    <NavLink
+                        to="/"
+                        className="navbar__link" 
+                        >Projects
+                    </NavLink>
+                        
+                    <NavLink 
+                        to="/"
+                        className="navbar__link" 
+                        >Hire
+                    </NavLink>
+                </div>    
+
+                <a className="navbar__button" href={Resume} download>
+                    <button className="navbar__btn navbar__primaryButton">Resume</button>
+                </a>    
+                <TiThMenuOutline className="navbar__barIcon" />
             </nav>
         </header>
-
     );
 }
 
