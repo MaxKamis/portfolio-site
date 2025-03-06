@@ -1,0 +1,17 @@
+@use "../../styles/partials/global" as *;
+
+.Container {
+    max-width: 1000px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.SectionTitle {
+    font-size: 28px;
+    color: #151418;
+    font-weight: 700;
+    margin-bottom: 3.5rem;
+}

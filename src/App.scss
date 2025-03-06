@@ -20,3 +20,67 @@ a {
   background-color: transparent;
   transition: 0.2s ease-in;
 } 
+
+ul,
+ol {
+  list-style: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 400;
+  outline: none;
+}
+
+.SecondaryBtn{
+  padding: 10px 18px;
+  border: 2px solid rgb(57, 134, 250);
+  color: white;
+  margin-right: 1rem;
+  background: rgb(57, 134, 250);
+
+}
+
+.btn-shadow{
+  box-shadow: 0px 2px 5px rgba(160, 170, 180, 0.6);
+
+}
+
+.PrimaryBtn {
+  padding: 12px 20px;
+  border: none;
+  background: rgb(57, 134, 250);
+  color: #f6f6f6;
+}

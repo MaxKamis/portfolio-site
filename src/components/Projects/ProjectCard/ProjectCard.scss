@@ -1,0 +1,94 @@
+@use "../../../styles/partials/global" as *;
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    border-radius: 10px;
+    align-items: stretch;
+    flex: 1 1 0;
+    background-color: $primary-color;
+    box-shadow: 0 5px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 0;
+        padding-bottom: 0;
+        flex-direction: column;
+    }
+
+    &__left {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    &__right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: white;
+        }
+
+        p {
+            font-weight: 400;
+            max-width: 95%;
+            margin-top: 10px;
+            margin-bottom: 1rem;
+            color: $neon-base-color;
+            text-align: center;
+
+            @include tablet {
+            }
+        }
+
+        @include tablet {
+            margin-top: 1rem;
+        }    
+    }
+
+    &__links {
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.techCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include tablet {
+        align-items: flex-start;
+    }
+}    
+
+.techCard {
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.815);
+    cursor: default;
+    box-shadow: 0px 2px 5px rgba(160, 170, 180, 0.6); 
+}
