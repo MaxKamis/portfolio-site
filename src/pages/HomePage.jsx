@@ -6,8 +6,12 @@ function HomePage() {
   return (
     <>
       <Header />
-      <Hero />
-      <Projects />
+      <div >
+        <Hero />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
     </>
   );
 }
