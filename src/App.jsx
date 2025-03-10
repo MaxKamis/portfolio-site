@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage.jsx";
 function App() {
   return (
     <>
-        <BrowserRouter basename="/portfolio-site" >
+        <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>
