@@ -1,7 +1,7 @@
 export const ProjectList = [
   {
     title: "LocalHive",
-    img: "/LocalHive.png", 
+    img: "/portfolio-site/images/LocalHive.png", 
     description:
       "A platform for local businesses to create online stores and sell products.",
     tech_stack: ["NextJs", "NodeJS", "MongoDB", "TailwindCSS"],
@@ -9,7 +9,7 @@ export const ProjectList = [
   },
   {
     title: "InStock",
-    img: "/inStock.png", 
+    img: "/portfolio-site/images/inStock.png", 
     description:
       "An inventory management system for small businesses, developed with a team in an Agile environment with Jira.",
     tech_stack: ["ReactJS", "NodeJS", "MySQL", "Knex", "SASS"],
@@ -17,7 +17,7 @@ export const ProjectList = [
   },
   {
     title: "EcoGuardian",
-    img: "/ecoGuardian.png", 
+    img: "/portfolio-site/images/ecoGuardian.png", 
     description:
       "A platform to report wildlife in distress, adopt animals, and engage in conservation efforts. Group project developed in 24 hours for CalgaryHacks 2025.",
     tech_stack: ["TypeScript", "ReactJS", "Axios", "TailwindCSS", "NodeJS", "MySQL", "ExpressJS"],

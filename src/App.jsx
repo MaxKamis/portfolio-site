@@ -4,12 +4,16 @@ import HomePage from "./pages/HomePage.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 
 function App() {
+  // Set basename only in production (GitHub Pages) or if deployed
+  const basename = import.meta.env.MODE === 'production' ? '/portfolio-site' : '/';
+
+
   return (
     <>
-        <BrowserRouter basename='/portfolio-site'>
+        <BrowserRouter basename={basename}>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="portfolio-site/" element={<HomePage />} />
+          <Route path="portfolio-site/projects" element={<Projects />} />
         </Routes>
       </BrowserRouter>
         
