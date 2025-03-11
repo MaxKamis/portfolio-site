@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 
 function App() {
+  
   return (
     <>
         <BrowserRouter basename="/portfolio-site">
