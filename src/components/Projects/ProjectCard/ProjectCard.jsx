@@ -9,7 +9,7 @@ export default function ProjectCard() {
                 <ScrollAnimation animateIn="fadeInLeft" key={index}>
                     <div className="card">
                         <div className="card__left">
-                            <img src={list.img} alt={list.name} />
+                            <img src={list.img} alt={list.title} />
                         </div>
                         <div className="card__right">
                             <h4>{list.title}</h4>

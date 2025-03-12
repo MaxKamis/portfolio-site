@@ -1,30 +1,29 @@
 export const ProjectList = [
   {
-    img: "/localHive.png",
     title: "LocalHive",
+    img: "/portfolio-site/images/LocalHive.png", 
     description:
       "A platform for local businesses to create online stores and sell products.",
     tech_stack: ["NextJs", "NodeJS", "MongoDB", "TailwindCSS"],
     github_url: "https://github.com/MaxKamis/LocalHive-Max",
   },
   {
-    img: "/inStock.png",
     title: "InStock",
+    img: "/portfolio-site/images/inStock.png", 
     description:
       "An inventory management system for small businesses, developed with a team in an Agile environment with Jira.",
     tech_stack: ["ReactJS", "NodeJS", "MySQL", "Knex", "SASS"],
     github_url: "https://github.com/orgs/BrainStation-Tech-Titans/repositories",
   },
   {
-    img: "/ecoGuardian.png",
     title: "EcoGuardian",
+    img: "/portfolio-site/images/ecoGuardian.png", 
     description:
-      "A platform to report wildlife in distress, adopt animals, and engage in conservation efforts.",
-    tech_stack: ["TypeScript", "ReactJS", "Axios", "TailwindCSS", "NodeJS", "ExpressJS", "MySQL", "TensorFlow", "FastAPI"],
+      "A platform to report wildlife in distress, adopt animals, and engage in conservation efforts. Group project developed in 24 hours for CalgaryHacks 2025.",
+    tech_stack: ["TypeScript", "ReactJS", "Axios", "TailwindCSS", "NodeJS", "MySQL", "ExpressJS"],
     github_url: "https://github.com/orgs/CalgaryHacks2025/repositories",
     demo_url: "https://devpost.com/software/ecopulse-sicyv1",
   },
-  
 ];
 
 export const stackList = [
