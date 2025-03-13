@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import { TiThMenuOutline } from "react-icons/ti";
 
-function Header() {
+function Header({ handleOnclick }) {
     return (
         <header className="headerWrapper">
             <nav className="navbar">
@@ -28,7 +28,7 @@ function Header() {
                 <a className="navbar__button" href={Resume} download>
                     <button className="navbar__btn navbar__primaryButton">Resume</button>
                 </a>    
-                <TiThMenuOutline className="navbar__barIcon" />
+                <TiThMenuOutline className="navbar__barIcon" onClick={ handleOnclick } />
             </nav>
         </header>
     );
